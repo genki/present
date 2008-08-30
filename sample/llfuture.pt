@@ -1,0 +1,87 @@
+= Ruby on Rails
+- The Web Application Framework
+- 
+- s21g LLC 瀧内元気
+
+= Introduction
+- ご存知だと思いますが
+
+= Ruby on Rails
+% green
+- by David Heinemeier Hansson
+% 0
+- 
+- since 2004/7/25
+
+= Ruby on Rails
+- は何が良いのか？
+
+* Ruby on Railsの特長(1/3)
+< 明確な思想を持っている
++ Convention over Configuration
++ Don't Repeat Yourself
++ RESTful
+, -
+> 様々なフレームワークに影響を与えた
+
+* Ruby on Railsの特長(2/3)
+< フルスタック
++ 全てのモジュールが調和を持っている
++ モジュール間の橋渡し的な設定が不要
+< 進化が早い
++ 自作するより待っていた方が早い
+
+= No Yaks!
+- アプリケーション開発に集中できる
+
+# これぞフレームワーク
+
+- しかしもっと重要なのは
+, -
+% red
+# Ruby
+% 0
+
+% red
+= Ruby on Rails
+% 0
+- Rubyで仕事ができるフレームワーク
+
+* Rubyは三拍子揃っている
++ 早い!
+, -
+++- Light Weightですから
+, -
++ 安い!
+, -
+++- もちろん無料
+, -
++ うまい!
+, -
+++- うまい???
+, -
+++- Rubyは気持ちがいいらしい
+
+* Rubyは気持ちがいい?
+< なぜ?
++ 作っている人の性格がいい
++ プログラマの生産には気持ちよさが大事
++ Rubyをキメると気持ちよくなる
+, -
+% red
+> by Matz
+% 0
+
+* Ruby on Railsの特長(3/3)
+% red
+= Ruby on Rails
+% 0
+- は気持ちがいい
+
+* まとめ
+% red
+= Ruby on Rails
+% 0
+- で気持ちよくWebを開発しよう
+
+. Thank you!

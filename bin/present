@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+$:.unshift File.join(File.dirname(__FILE__), '../lib')
+require 'optparse'
+require 'present'
+
+Version = Present::VERSION
+opt = OptionParser.new
+opt.banner = "Usage: present [options] file [duration] [page]"
+opt.on_tail('-v', '--version', 'Show version.'){puts opt.ver; exit}
+opt.order!(ARGV)
+
+Present.new(*ARGV).start
