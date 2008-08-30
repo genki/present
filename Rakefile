@@ -65,6 +65,7 @@ spec = Gem::Specification.new do |s|
 	s.add_dependency('ncurses')
 	s.add_dependency('text')
 	s.add_dependency('escape')
+	s.add_dependency('redgreen')
 	#s.required_ruby_version = '>= 1.8.2'
 
 	s.files = %w(README ChangeLog Rakefile) +

@@ -9,4 +9,8 @@ opt.banner = "Usage: present [options] file [duration] [page]"
 opt.on_tail('-v', '--version', 'Show version.'){puts opt.ver; exit}
 opt.order!(ARGV)
 
-Present.new(*ARGV).start
+if ARGV.empty?
+  system $0, '-h'
+else
+  Present.new(*ARGV).start
+end
