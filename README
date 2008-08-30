@@ -1,9 +1,12 @@
 
 = present
 
+Presentation tool for terminal.
 
 == Description
 
+This program is for terminal addicts.
+You can present your slide by using your favorite terminal.
 
 == Installation
 
@@ -21,6 +24,15 @@
 
 == Synopsis
 
+  present [options] file [duration] [page]
+
+    `file` specifies presentation file. there is an example in the sample/ dir.
+    
+    `duration` specifies expected duration in minute. This is optional. The
+    default value is 5 min.
+
+    `page` specifies the page number which will be started from. This is
+    optional. The default value is 1.
 
 == Copyright
 
