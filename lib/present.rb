@@ -6,7 +6,7 @@ require 'nkf'
 require 'present/page'
 
 class Present
-  VERSION = '0.0.1'
+  VERSION = '0.0.2'
   TIOCGWINSZ = 0x5413
 
   def initialize(path, timer = 5, page = 1)
