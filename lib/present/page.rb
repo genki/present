@@ -15,11 +15,13 @@ class Present
       end
       @lines.each do |line|
         text, command = line.split(/\s+/, 2).reverse
-        if command
+        if command.nil?
+          next
+        elsif command.empty?
+          stack.last[1] += "\n#{text}"
+        else
           execute_command.call
           stack.push [command, text]
-        else
-          stack.last[1] += "\n#{text}"
         end
       end
       execute_command.call
@@ -49,6 +51,11 @@ class Present
         @screen.color *text.split(/\s+/)
       when ','
         @screen.wait text.to_f
+      when ':'
+        command, *args = text.split(/\s+/)
+        @screen.send "do_#{command}", *args rescue nil
+      when '#'
+        # do nothing
       end
     end
   end

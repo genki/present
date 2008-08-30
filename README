@@ -6,7 +6,7 @@ Presentation tool for terminal.
 == Description
 
 This program is for terminal addicts.
-You can present your slide by using your favorite terminal.
+You can make a presentation by using your favorite terminal.
 
 == Installation
 
@@ -21,6 +21,12 @@ You can present your slide by using your favorite terminal.
 
 == Features/Problems
 
+- You can make a presentation by using your favorite terminal.
+- You need to configure font size of terminal by yourself.
+- You can't use pictures, yet.
+  Making pictures into ASCII art is a future work ;-)
+- You must encode presentation files as EUC-JP if you want to use Japanese.
+  This limitation comes from ruby-ncurses.
 
 == Synopsis
 
@@ -33,6 +39,38 @@ You can present your slide by using your favorite terminal.
 
     `page` specifies the page number which will be started from. This is
     optional. The default value is 1.
+
+== File Format
+
+The presentation file is a text file which includes series of pages of which
+you will present.
+
+The pages are separated by blank lines.  The page itself consists of lines.
+Each line has a command at the beginning and text follows it.  The command and
+the text are separated by white spaces.  The available commands are as follows.
+
+= Title. The text follows will be rendered at the center of screen with larger
+  font.
+- Explanation. The text will follow the previous text. The text is right
+  alignment.
+* Header. The text will appear at the top of the page with bold style.
++ Bullet. The text will follow the previous text with bullet mark at the
+  beginning. The text is left alignment. Bullets can be nested by doubling or
+  tripling the symbol.
+  You can avoid margin between the line and the previous line by appending `-`
+  symbol, like this `+-`.
+< Left alignment text.
+> Right aligment text.
+% Color. You can change color of texts which appears after the line.
+The color specified by the name of basic colors, such as red, blue, white,
+black, and so on. If the text is `0`, the color is reset.
+, Wait. Wait for your hitting keys if the text is `-`.  Wait for specified
+  interval if the text is a number in sec
+: Execute command. The text will be executed as a internal command.
+
+The command can be empty, it means that the line starts with white spaces.  The
+texts of these lines are simply added to the texts of previous lines
+respectively.
 
 == Copyright
 

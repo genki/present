@@ -224,4 +224,8 @@ class Present
   def do_q
     exit
   end
+
+  def do_fit(geometry)
+    w, h = geometry.split('x').map{|i| i.to_i}
+  end
 end
