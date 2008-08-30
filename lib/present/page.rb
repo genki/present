@@ -54,7 +54,7 @@ class Present
       when ':'
         command, *args = text.split(/\s+/)
         @screen.send "do_#{command}", *args rescue nil
-      when '#'
+      when '`'
         # do nothing
       end
     end

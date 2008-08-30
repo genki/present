@@ -67,6 +67,8 @@ black, and so on. If the text is `0`, the color is reset.
 , Wait. Wait for your hitting keys if the text is `-`.  Wait for specified
   interval if the text is a number in sec
 : Execute command. The text will be executed as a internal command.
+# Message. The text will be displayed with large font in the middle.
+. Final message.
 
 The command can be empty, it means that the line starts with white spaces.  The
 texts of these lines are simply added to the texts of previous lines

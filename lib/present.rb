@@ -6,7 +6,7 @@ require 'nkf'
 require 'present/page'
 
 class Present
-  VERSION = '0.0.3'
+  VERSION = '0.1.0'
   TIOCGWINSZ = 0x5413
 
   def initialize(path, timer = 5, page = 1)
@@ -223,9 +223,5 @@ class Present
 
   def do_q
     exit
-  end
-
-  def do_fit(geometry)
-    w, h = geometry.split('x').map{|i| i.to_i}
   end
 end
