@@ -8,7 +8,9 @@ require 'rake/rdoctask'
 require 'rake/contrib/rubyforgepublisher'
 require 'rake/contrib/sshpublisher'
 require 'fileutils'
-require 'lib/present'
+
+$:.unshift File.join(File.dirname(__FILE__), 'lib')
+require 'present'
 include FileUtils
 
 NAME              = "present"
